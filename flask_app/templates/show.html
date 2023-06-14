@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    {%for bui in business%}
+
+    {{bui.name}}
+    {%endfor%}
+
+    {%for img in images%}
+
+    {{bui.image}}
+    {%endfor%}
+    {%for desc in business%}
+
+    {{desc.description}}
+    {%endfor%}
+    <h2>Contact Info</h2>
+    {%for desc in business%}
+
+    {{desc.adresse_id}}
+    {%endfor%}
+    {%for desc in business%}
+
+    {{desc.phone}}
+    {%endfor%}
+    {%for desc in business%}
+
+    {{desc.email}}
+    {%endfor%}
+    <a href="/Make/appointment" class="btn btn-secondary">Get an Appointment</a>
+    {%for cer in service%}
+
+    {{cer.name}}
+<br>
+    {%endfor%}
+    {%for user in users%}
+
+    {{user.name}}
+<br>
+    {%endfor%}
+    {%for rev in service_reviews%}
+
+    {{rev.name}}
+<br>
+    {%endfor%}
+</body>
+</html>
